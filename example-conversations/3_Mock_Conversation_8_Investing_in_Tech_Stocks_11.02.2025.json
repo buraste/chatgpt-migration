@@ -1,0 +1,125 @@
+{
+  "title": "Mock Conversation 8: Investing in Tech Stocks",
+  "create_time": 1739300000.0,
+  "update_time": 1739301000.0,
+  "mapping": {
+    "c8a8-root": {
+      "id": "c8a8-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c8a8-system"
+      ]
+    },
+    "c8a8-system": {
+      "id": "c8a8-system",
+      "message": {
+        "id": "c8a8-system",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "System message for investing guidance."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c8a8-root",
+      "children": [
+        "c8a8-user1"
+      ]
+    },
+    "c8a8-user1": {
+      "id": "c8a8-user1",
+      "message": {
+        "id": "c8a8-user1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739300002.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Should I invest in large-cap tech stocks or look at smaller companies?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "mock-req-0008"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c8a8-system",
+      "children": [
+        "c8a8-assistant1"
+      ]
+    },
+    "c8a8-assistant1": {
+      "id": "c8a8-assistant1",
+      "message": {
+        "id": "c8a8-assistant1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739300999.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Large-caps tend to be more stable. Smaller tech companies can offer higher growth potential but carry more risk."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "parent_id": "c8a8-user1",
+          "request_id": "mock-req-0008"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c8a8-user1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c8a8-assistant1",
+  "plugin_ids": null,
+  "conversation_id": "conv-0008",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "example.com"
+  ],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "id": "conv-0008"
+}

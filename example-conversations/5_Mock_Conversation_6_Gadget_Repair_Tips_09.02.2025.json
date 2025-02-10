@@ -1,0 +1,127 @@
+{
+  "title": "Mock Conversation 6: Gadget Repair Tips",
+  "create_time": 1739100000.0,
+  "update_time": 1739105000.0,
+  "mapping": {
+    "c6a6-root": {
+      "id": "c6a6-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c6a6-system"
+      ]
+    },
+    "c6a6-system": {
+      "id": "c6a6-system",
+      "message": {
+        "id": "c6a6-system",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "System note: Gadget repair introduction."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c6a6-root",
+      "children": [
+        "c6a6-user1"
+      ]
+    },
+    "c6a6-user1": {
+      "id": "c6a6-user1",
+      "message": {
+        "id": "c6a6-user1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739100002.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "My phone won't charge properly. Should I replace the battery or check the port first?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "mock-req-0006"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c6a6-system",
+      "children": [
+        "c6a6-assistant1"
+      ]
+    },
+    "c6a6-assistant1": {
+      "id": "c6a6-assistant1",
+      "message": {
+        "id": "c6a6-assistant1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739104999.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "It's often wise to check and clean the charging port first. If that fails, consider battery replacement."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "c6a6-user1",
+          "request_id": "mock-req-0006"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c6a6-user1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c6a6-assistant1",
+  "plugin_ids": null,
+  "conversation_id": "conv-0006",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "example.com"
+  ],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "id": "conv-0006"
+}

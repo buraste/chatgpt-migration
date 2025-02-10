@@ -1,0 +1,125 @@
+{
+  "title": "Mock Conversation 9: Running Routine",
+  "create_time": 1739400000.0,
+  "update_time": 1739400002.0,
+  "mapping": {
+    "c9a9-root": {
+      "id": "c9a9-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c9a9-system"
+      ]
+    },
+    "c9a9-system": {
+      "id": "c9a9-system",
+      "message": {
+        "id": "c9a9-system",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "System prompt for running routine tips."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c9a9-root",
+      "children": [
+        "c9a9-user1"
+      ]
+    },
+    "c9a9-user1": {
+      "id": "c9a9-user1",
+      "message": {
+        "id": "c9a9-user1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739400001.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I want to start running every morning. How should I begin?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "mock-req-0009"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c9a9-system",
+      "children": [
+        "c9a9-assistant1"
+      ]
+    },
+    "c9a9-assistant1": {
+      "id": "c9a9-assistant1",
+      "message": {
+        "id": "c9a9-assistant1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739400002.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Start with interval runs or brisk walks, gradually increasing your running segments over a few weeks."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "parent_id": "c9a9-user1",
+          "request_id": "mock-req-0009"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c9a9-user1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c9a9-assistant1",
+  "plugin_ids": null,
+  "conversation_id": "conv-0009",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "example.com"
+  ],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "id": "conv-0009"
+}

@@ -1,0 +1,125 @@
+{
+  "title": "Mock Conversation 7: Yoga Poses for Beginners",
+  "create_time": 1739200000.0,
+  "update_time": 1739200500.0,
+  "mapping": {
+    "c7a7-root": {
+      "id": "c7a7-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c7a7-system"
+      ]
+    },
+    "c7a7-system": {
+      "id": "c7a7-system",
+      "message": {
+        "id": "c7a7-system",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Welcome to the yoga guidance system."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c7a7-root",
+      "children": [
+        "c7a7-user1"
+      ]
+    },
+    "c7a7-user1": {
+      "id": "c7a7-user1",
+      "message": {
+        "id": "c7a7-user1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739200002.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm new to yoga. Which beginner poses should I focus on?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "mock-req-0007"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c7a7-system",
+      "children": [
+        "c7a7-assistant1"
+      ]
+    },
+    "c7a7-assistant1": {
+      "id": "c7a7-assistant1",
+      "message": {
+        "id": "c7a7-assistant1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739200499.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Mountain Pose, Downward Dog, and Child's Pose are great for beginners to build foundation."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "parent_id": "c7a7-user1",
+          "request_id": "mock-req-0007"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c7a7-user1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c7a7-assistant1",
+  "plugin_ids": null,
+  "conversation_id": "conv-0007",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "example.com"
+  ],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "id": "conv-0007"
+}

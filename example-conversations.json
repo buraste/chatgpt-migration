@@ -1,0 +1,1173 @@
+[
+  {
+    "title": "Mock Conversation 1: Banana Trade",
+    "create_time": 1739000001.123456,
+    "update_time": 1739000105.987654,
+    "mapping": {
+      "b1a1-root": {
+        "id": "b1a1-root",
+        "message": null,
+        "parent": null,
+        "children": ["b1a1-system"]
+      },
+      "b1a1-system": {
+        "id": "b1a1-system",
+        "message": {
+          "id": "b1a1-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["System message for the Banana Trade conversation."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "b1a1-root",
+        "children": ["b1a1-user1"]
+      },
+      "b1a1-user1": {
+        "id": "b1a1-user1",
+        "message": {
+          "id": "b1a1-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739000002.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Hello, I'd like to learn more about trading bananas internationally."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0001",
+            "message_source": null,
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "b1a1-system",
+        "children": ["b1a1-assistant1"]
+      },
+      "b1a1-assistant1": {
+        "id": "b1a1-assistant1",
+        "message": {
+          "id": "b1a1-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739000100.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Banana export markets often focus on supply stability, shipping logistics, and certifications (like fair trade)."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [200002, 200007]
+            },
+            "is_complete": true,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "parent_id": "b1a1-user1",
+            "request_id": "mock-req-0001",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "b1a1-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "b1a1-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0001",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0001"
+  },
+  {
+    "title": "Mock Conversation 2: Vintage Car Discussion",
+    "create_time": 1739001111.111111,
+    "update_time": 1739001111.111999,
+    "mapping": {
+      "c2a2-root": {
+        "id": "c2a2-root",
+        "message": null,
+        "parent": null,
+        "children": ["c2a2-system"]
+      },
+      "c2a2-system": {
+        "id": "c2a2-system",
+        "message": {
+          "id": "c2a2-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["System greeting for vintage car discussions."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c2a2-root",
+        "children": ["c2a2-user1"]
+      },
+      "c2a2-user1": {
+        "id": "c2a2-user1",
+        "message": {
+          "id": "c2a2-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739001112.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["Which vintage car models are best for daily use?"]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0002",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c2a2-system",
+        "children": ["c2a2-assistant1"]
+      },
+      "c2a2-assistant1": {
+        "id": "c2a2-assistant1",
+        "message": {
+          "id": "c2a2-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739001113.5,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Some popular options include older Mercedes models, or certain Japanese classics known for reliability."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "is_complete": true,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "parent_id": "c2a2-user1",
+            "request_id": "mock-req-0002"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c2a2-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c2a2-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0002",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0002"
+  },
+  {
+    "title": "Mock Conversation 3: Coffee Bean Advice",
+    "create_time": 1739002222.222222,
+    "update_time": 1739002300.222999,
+    "mapping": {
+      "c3a3-root": {
+        "id": "c3a3-root",
+        "message": null,
+        "parent": null,
+        "children": ["c3a3-system"]
+      },
+      "c3a3-system": {
+        "id": "c3a3-system",
+        "message": {
+          "id": "c3a3-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["System note for coffee bean discussions."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c3a3-root",
+        "children": ["c3a3-user1"]
+      },
+      "c3a3-user1": {
+        "id": "c3a3-user1",
+        "message": {
+          "id": "c3a3-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739002223.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Which coffee bean origin has the strongest flavor profile?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0003"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c3a3-system",
+        "children": ["c3a3-assistant1"]
+      },
+      "c3a3-assistant1": {
+        "id": "c3a3-assistant1",
+        "message": {
+          "id": "c3a3-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739002299.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Beans from Ethiopia or Sumatra can have very distinct flavors, often described as bold or complex."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "parent_id": "c3a3-user1",
+            "request_id": "mock-req-0003"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c3a3-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c3a3-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0003",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0003"
+  },
+  {
+    "title": "Mock Conversation 4: Travel Itinerary Help",
+    "create_time": 1739010000.0,
+    "update_time": 1739010500.0,
+    "mapping": {
+      "c4a4-root": {
+        "id": "c4a4-root",
+        "message": null,
+        "parent": null,
+        "children": ["c4a4-system"]
+      },
+      "c4a4-system": {
+        "id": "c4a4-system",
+        "message": {
+          "id": "c4a4-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["Travel system intro message."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c4a4-root",
+        "children": ["c4a4-user1"]
+      },
+      "c4a4-user1": {
+        "id": "c4a4-user1",
+        "message": {
+          "id": "c4a4-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739010002.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I'd like to plan a week-long trip to Spain. Any suggestions?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0004"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c4a4-system",
+        "children": ["c4a4-assistant1"]
+      },
+      "c4a4-assistant1": {
+        "id": "c4a4-assistant1",
+        "message": {
+          "id": "c4a4-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739010498.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Consider visiting Barcelona, Madrid, and Seville. Each city has unique cultural highlights."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "parent_id": "c4a4-user1",
+            "request_id": "mock-req-0004"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c4a4-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c4a4-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0004",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0004"
+  },
+  {
+    "title": "Mock Conversation 5: Coding Bootcamp Reviews",
+    "create_time": 1739020000.0,
+    "update_time": 1739020001.0,
+    "mapping": {
+      "c5a5-root": {
+        "id": "c5a5-root",
+        "message": null,
+        "parent": null,
+        "children": ["c5a5-system"]
+      },
+      "c5a5-system": {
+        "id": "c5a5-system",
+        "message": {
+          "id": "c5a5-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["System greeting for coding bootcamp queries."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c5a5-root",
+        "children": ["c5a5-user1"]
+      },
+      "c5a5-user1": {
+        "id": "c5a5-user1",
+        "message": {
+          "id": "c5a5-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739020000.5,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Which coding bootcamp is best for full-stack development?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0005"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c5a5-system",
+        "children": ["c5a5-assistant1"]
+      },
+      "c5a5-assistant1": {
+        "id": "c5a5-assistant1",
+        "message": {
+          "id": "c5a5-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739020000.8,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Many bootcamps cover full-stack, like General Assembly or Hack Reactor, but do your research on reviews and job outcomes."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "parent_id": "c5a5-user1",
+            "request_id": "mock-req-0005"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c5a5-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c5a5-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0005",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0005"
+  },
+  {
+    "title": "Mock Conversation 6: Gadget Repair Tips",
+    "create_time": 1739100000.0,
+    "update_time": 1739105000.0,
+    "mapping": {
+      "c6a6-root": {
+        "id": "c6a6-root",
+        "message": null,
+        "parent": null,
+        "children": ["c6a6-system"]
+      },
+      "c6a6-system": {
+        "id": "c6a6-system",
+        "message": {
+          "id": "c6a6-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["System note: Gadget repair introduction."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c6a6-root",
+        "children": ["c6a6-user1"]
+      },
+      "c6a6-user1": {
+        "id": "c6a6-user1",
+        "message": {
+          "id": "c6a6-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739100002.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My phone won't charge properly. Should I replace the battery or check the port first?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0006"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c6a6-system",
+        "children": ["c6a6-assistant1"]
+      },
+      "c6a6-assistant1": {
+        "id": "c6a6-assistant1",
+        "message": {
+          "id": "c6a6-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739104999.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "It's often wise to check and clean the charging port first. If that fails, consider battery replacement."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "parent_id": "c6a6-user1",
+            "request_id": "mock-req-0006"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c6a6-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c6a6-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0006",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0006"
+  },
+  {
+    "title": "Mock Conversation 7: Yoga Poses for Beginners",
+    "create_time": 1739200000.0,
+    "update_time": 1739200500.0,
+    "mapping": {
+      "c7a7-root": {
+        "id": "c7a7-root",
+        "message": null,
+        "parent": null,
+        "children": ["c7a7-system"]
+      },
+      "c7a7-system": {
+        "id": "c7a7-system",
+        "message": {
+          "id": "c7a7-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["Welcome to the yoga guidance system."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c7a7-root",
+        "children": ["c7a7-user1"]
+      },
+      "c7a7-user1": {
+        "id": "c7a7-user1",
+        "message": {
+          "id": "c7a7-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739200002.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I'm new to yoga. Which beginner poses should I focus on?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0007"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c7a7-system",
+        "children": ["c7a7-assistant1"]
+      },
+      "c7a7-assistant1": {
+        "id": "c7a7-assistant1",
+        "message": {
+          "id": "c7a7-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739200499.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Mountain Pose, Downward Dog, and Child's Pose are great for beginners to build foundation."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "parent_id": "c7a7-user1",
+            "request_id": "mock-req-0007"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c7a7-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c7a7-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0007",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0007"
+  },
+  {
+    "title": "Mock Conversation 8: Investing in Tech Stocks",
+    "create_time": 1739300000.0,
+    "update_time": 1739301000.0,
+    "mapping": {
+      "c8a8-root": {
+        "id": "c8a8-root",
+        "message": null,
+        "parent": null,
+        "children": ["c8a8-system"]
+      },
+      "c8a8-system": {
+        "id": "c8a8-system",
+        "message": {
+          "id": "c8a8-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["System message for investing guidance."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c8a8-root",
+        "children": ["c8a8-user1"]
+      },
+      "c8a8-user1": {
+        "id": "c8a8-user1",
+        "message": {
+          "id": "c8a8-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739300002.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Should I invest in large-cap tech stocks or look at smaller companies?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0008"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c8a8-system",
+        "children": ["c8a8-assistant1"]
+      },
+      "c8a8-assistant1": {
+        "id": "c8a8-assistant1",
+        "message": {
+          "id": "c8a8-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739300999.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Large-caps tend to be more stable. Smaller tech companies can offer higher growth potential but carry more risk."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "parent_id": "c8a8-user1",
+            "request_id": "mock-req-0008"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c8a8-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c8a8-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0008",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0008"
+  },
+  {
+    "title": "Mock Conversation 9: Running Routine",
+    "create_time": 1739400000.0,
+    "update_time": 1739400002.0,
+    "mapping": {
+      "c9a9-root": {
+        "id": "c9a9-root",
+        "message": null,
+        "parent": null,
+        "children": ["c9a9-system"]
+      },
+      "c9a9-system": {
+        "id": "c9a9-system",
+        "message": {
+          "id": "c9a9-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["System prompt for running routine tips."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c9a9-root",
+        "children": ["c9a9-user1"]
+      },
+      "c9a9-user1": {
+        "id": "c9a9-user1",
+        "message": {
+          "id": "c9a9-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739400001.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I want to start running every morning. How should I begin?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0009"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c9a9-system",
+        "children": ["c9a9-assistant1"]
+      },
+      "c9a9-assistant1": {
+        "id": "c9a9-assistant1",
+        "message": {
+          "id": "c9a9-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739400002.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Start with interval runs or brisk walks, gradually increasing your running segments over a few weeks."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "parent_id": "c9a9-user1",
+            "request_id": "mock-req-0009"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c9a9-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c9a9-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0009",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0009"
+  },
+  {
+    "title": "Mock Conversation 10: Baking Bread",
+    "create_time": 1739500000.0,
+    "update_time": 1739501234.0,
+    "mapping": {
+      "c10a10-root": {
+        "id": "c10a10-root",
+        "message": null,
+        "parent": null,
+        "children": ["c10a10-system"]
+      },
+      "c10a10-system": {
+        "id": "c10a10-system",
+        "message": {
+          "id": "c10a10-system",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["System message for bread baking guide."]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c10a10-root",
+        "children": ["c10a10-user1"]
+      },
+      "c10a10-user1": {
+        "id": "c10a10-user1",
+        "message": {
+          "id": "c10a10-user1",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739500001.0,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I'm attempting to bake my first loaf of sourdough. Any tips?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "request_id": "mock-req-0010"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c10a10-system",
+        "children": ["c10a10-assistant1"]
+      },
+      "c10a10-assistant1": {
+        "id": "c10a10-assistant1",
+        "message": {
+          "id": "c10a10-assistant1",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1739501233.5,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Ensure your starter is active and give the dough ample time to ferment. Temperature and timing are crucial."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "parent_id": "c10a10-user1",
+            "request_id": "mock-req-0010"
+          },
+          "recipient": "all",
+          "channel": null
+        },
+        "parent": "c10a10-user1",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "c10a10-assistant1",
+    "plugin_ids": null,
+    "conversation_id": "conv-0010",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "is_archived": false,
+    "is_starred": null,
+    "safe_urls": ["example.com"],
+    "default_model_slug": "auto",
+    "conversation_origin": null,
+    "voice": null,
+    "async_status": null,
+    "disabled_tool_ids": [],
+    "id": "conv-0010"
+  }
+]

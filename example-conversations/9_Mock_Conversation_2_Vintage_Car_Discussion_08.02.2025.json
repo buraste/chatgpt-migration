@@ -1,0 +1,129 @@
+{
+  "title": "Mock Conversation 2: Vintage Car Discussion",
+  "create_time": 1739001111.111111,
+  "update_time": 1739001111.111999,
+  "mapping": {
+    "c2a2-root": {
+      "id": "c2a2-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c2a2-system"
+      ]
+    },
+    "c2a2-system": {
+      "id": "c2a2-system",
+      "message": {
+        "id": "c2a2-system",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "System greeting for vintage car discussions."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c2a2-root",
+      "children": [
+        "c2a2-user1"
+      ]
+    },
+    "c2a2-user1": {
+      "id": "c2a2-user1",
+      "message": {
+        "id": "c2a2-user1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739001112.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Which vintage car models are best for daily use?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "mock-req-0002",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c2a2-system",
+      "children": [
+        "c2a2-assistant1"
+      ]
+    },
+    "c2a2-assistant1": {
+      "id": "c2a2-assistant1",
+      "message": {
+        "id": "c2a2-assistant1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739001113.5,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Some popular options include older Mercedes models, or certain Japanese classics known for reliability."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_complete": true,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "c2a2-user1",
+          "request_id": "mock-req-0002"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c2a2-user1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c2a2-assistant1",
+  "plugin_ids": null,
+  "conversation_id": "conv-0002",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "example.com"
+  ],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "id": "conv-0002"
+}

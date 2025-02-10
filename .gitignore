@@ -1,0 +1,20 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+.venv/
+
+# Ignore build and distribution directories
+build/
+dist/
+*.egg-info/
+
+# Jupyter checkpoints (if any)
+.ipynb_checkpoints/
+
+# Project-specific ignores
+conversations.json
+conversations/

@@ -1,0 +1,125 @@
+{
+  "title": "Mock Conversation 4: Travel Itinerary Help",
+  "create_time": 1739010000.0,
+  "update_time": 1739010500.0,
+  "mapping": {
+    "c4a4-root": {
+      "id": "c4a4-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c4a4-system"
+      ]
+    },
+    "c4a4-system": {
+      "id": "c4a4-system",
+      "message": {
+        "id": "c4a4-system",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Travel system intro message."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c4a4-root",
+      "children": [
+        "c4a4-user1"
+      ]
+    },
+    "c4a4-user1": {
+      "id": "c4a4-user1",
+      "message": {
+        "id": "c4a4-user1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739010002.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'd like to plan a week-long trip to Spain. Any suggestions?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "mock-req-0004"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c4a4-system",
+      "children": [
+        "c4a4-assistant1"
+      ]
+    },
+    "c4a4-assistant1": {
+      "id": "c4a4-assistant1",
+      "message": {
+        "id": "c4a4-assistant1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739010498.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Consider visiting Barcelona, Madrid, and Seville. Each city has unique cultural highlights."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "parent_id": "c4a4-user1",
+          "request_id": "mock-req-0004"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c4a4-user1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c4a4-assistant1",
+  "plugin_ids": null,
+  "conversation_id": "conv-0004",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "example.com"
+  ],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "id": "conv-0004"
+}

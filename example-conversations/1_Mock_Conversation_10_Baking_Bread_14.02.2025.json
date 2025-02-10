@@ -1,0 +1,127 @@
+{
+  "title": "Mock Conversation 10: Baking Bread",
+  "create_time": 1739500000.0,
+  "update_time": 1739501234.0,
+  "mapping": {
+    "c10a10-root": {
+      "id": "c10a10-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c10a10-system"
+      ]
+    },
+    "c10a10-system": {
+      "id": "c10a10-system",
+      "message": {
+        "id": "c10a10-system",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "System message for bread baking guide."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c10a10-root",
+      "children": [
+        "c10a10-user1"
+      ]
+    },
+    "c10a10-user1": {
+      "id": "c10a10-user1",
+      "message": {
+        "id": "c10a10-user1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739500001.0,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm attempting to bake my first loaf of sourdough. Any tips?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "mock-req-0010"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c10a10-system",
+      "children": [
+        "c10a10-assistant1"
+      ]
+    },
+    "c10a10-assistant1": {
+      "id": "c10a10-assistant1",
+      "message": {
+        "id": "c10a10-assistant1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739501233.5,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Ensure your starter is active and give the dough ample time to ferment. Temperature and timing are crucial."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "model_slug": "gpt-4o",
+          "default_model_slug": "auto",
+          "parent_id": "c10a10-user1",
+          "request_id": "mock-req-0010"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c10a10-user1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c10a10-assistant1",
+  "plugin_ids": null,
+  "conversation_id": "conv-0010",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "example.com"
+  ],
+  "default_model_slug": "auto",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "id": "conv-0010"
+}
