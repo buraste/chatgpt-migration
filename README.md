@@ -126,6 +126,23 @@ This project is open source and can be used, modified, and distributed by **anyo
 
 5.  **Open a Pull Request** explaining your changes.
 
+## FAQs
+
+**1. How can I change my ChatGPT email address?**  
+Currently, OpenAI does not provide a way to directly change the email address associated with your ChatGPT account. If you need to use a different email, you’ll have to create a new account.
+
+**2. Can I change my email address on ChatGPT?**  
+No. At this time, there is no built-in feature on ChatGPT or OpenAI’s platform to switch your email address.
+
+**3. Is it possible to change my ChatGPT email address?**  
+It’s not possible through any official means. You would need to export your data (if necessary) and open a new account under the email address you want to use.
+
+**4. Can you change your OpenAI account email?**  
+No, OpenAI does not currently support any form of email change for an existing account.
+
+**5. Can I change my ChatGPT email address without creating a new account?**  
+Unfortunately, no. You must create a new account with your desired email address if you wish to switch.
+
 ---
 
 **Happy migrating!**
