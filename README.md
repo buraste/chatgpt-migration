@@ -106,13 +106,7 @@ Please learn the whole thing. Here it is:
 
 Yes, it’s a bit tedious. But it’s currently the only known method to “import” them.
 
----
-
-## License
-
-This project is open source and can be used, modified, and distributed by **anyone**. You are free to **copy**, **edit**, and **share** it as needed. For detailed terms, see the [LICENSE](LICENSE) file (MIT License).
-
----
+**Happy migrating!**
 
 ## Contributing
 
@@ -143,6 +137,8 @@ No, OpenAI does not currently support any form of email change for an existing a
 **5. Can I change my ChatGPT email address without creating a new account?**  
 Unfortunately, no. You must create a new account with your desired email address if you wish to switch.
 
----
+## License
 
-**Happy migrating!**
+This project is open source and can be used, modified, and distributed by **anyone**. You are free to **copy**, **edit**, and **share** it as needed. For detailed terms, see the [LICENSE](LICENSE) file (MIT License).
+
+---
